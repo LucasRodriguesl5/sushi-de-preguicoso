@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial: Sushi de Preguiçoso 🍣</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --salmon: #ff7961;
+            --wasabi: #87a96b;
+            --nori: #2c3539;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 450px;
+            width: 100%;
+            overflow: hidden;
+            border: 2px solid var(--nori);
+            text-align: center;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, var(--salmon), #e05638);
+            padding: 40px 20px;
+            font-size: 4rem;
+            position: relative;
+        }
+
+        .header-banner::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: repeating-linear-gradient(45deg, var(--nori), var(--nori) 10px, transparent 10px, transparent 20px);
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            color: var(--salmon);
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #b3b3b3;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .details-table {
+            width: 100%;
+            margin: 25px 0;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .details-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .details-table td:first-child {
+            font-weight: bold;
+            color: var(--wasabi);
+            width: 30%;
+        }
+
+        .btn {
+            background-color: var(--salmon);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 5px 15px rgba(255, 121, 97, 0.4);
+            width: 80%;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #e05638;
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-banner">🍣🥢</div>
+        
+        <div class="content">
+            <h1>Operação Sushi de Preguiçoso</h1>
+            <p>Você foi intimado(a) para o melhor evento gastronômico do fim de semana: <span class="highlight">comer muito sushi sem ter o trabalho de enrolar!</span></p>
+            
+            <table class="details-table">
+                <tr>
+                    <td>📅 Quando</td>
+                    <td>Amanhã (Domingo)</td>
+                </tr>
+                <tr>
+                    <td>🥣 Cardápio</td>
+                    <td>Temaki de travessa (arroz, salmão e muito cream cheese)</td>
+                </tr>
+                <tr>
+                    <td>💡 Regra</td>
+                    <td>Trazer a fome e a preguiça atualizada.</td>
+                </tr>
+            </table>
+
+            <!-- Link do WhatsApp configurado para o seu número -->
+            <a href="https://wa.me" target="_blank" style="text-decoration: none;">
+                <button class="btn">Bora, tô dentro! 😋</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
